@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Build Your World with LEGO - Premium LEGO sets for all ages. Explore Star Wars, Technic, Harry Potter, and more!">
+  <meta name="keywords" content="LEGO, toys, building blocks, Star Wars LEGO, Technic, Harry Potter">
+  <title>BrickWorld | Build Your Imagination</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧱</text></svg>">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="logo">
+      <div class="logo-brick"></div>
+      BrickWorld
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#products">Shop</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#features">Why Us</a></li>
+      <li><a href="#cta">Join</a></li>
+    </ul>
+
+    <div class="nav-cart">
+      <button class="cart-btn">
+        🛒 Cart
+        <span class="cart-count">0</span>
+      </button>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </nav>
+
+  <!-- Cart Overlay -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Cart Sidebar -->
+  <aside class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3 class="cart-title">🛒 Your Cart</h3>
+      <button class="cart-close-btn" id="cart-close-btn">✕</button>
+    </div>
+
+    <div class="cart-items" id="cart-items">
+      <!-- Cart items will be dynamically inserted here -->
+      <div class="cart-empty" id="cart-empty">
+        <span class="cart-empty-icon">🧱</span>
+        <p>Your cart is empty</p>
+        <span class="cart-empty-sub">Add some awesome LEGO sets!</span>
+      </div>
+    </div>
+
+    <div class="cart-summary" id="cart-summary">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>Shipping</span>
+        <span id="cart-shipping">Free</span>
+      </div>
+      <div class="cart-summary-row cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button class="cart-checkout-btn" id="cart-checkout-btn">
+        Proceed to Checkout 🚀
+      </button>
+    </div>
+  </aside>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Floating 3D Bricks - ENHANCED -->
+    <div class="floating-bricks">
+      <div class="brick brick-1">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-2">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-3">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-4">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-5">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-6">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-7">
+        <div class="brick-inner"></div>
+      </div>
+      <div class="brick brick-8">
+        <div class="brick-inner"></div>
+      </div>
+
+      <!-- 3D Rotating LEGO Tower -->
+      <div class="lego-tower">
+        <div class="tower-brick">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+        </div>
+        <div class="tower-brick">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+        </div>
+        <div class="tower-brick">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+        </div>
+        <div class="tower-brick">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+        </div>
+        <div class="tower-brick">
+          <div class="face front"></div>
+          <div class="face back"></div>
+          <div class="face left"></div>
+          <div class="face right"></div>
+          <div class="face top"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <span class="hero-badge">🎄 Holiday Special - 25% Off!</span>
+      <h1>Build Your Imagination</h1>
+      <p class="hero-subtitle">
+        Discover premium LEGO sets that bring your wildest dreams to life.
+        From iconic Star Wars ships to breathtaking architecture – your next masterpiece awaits.
+      </p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn-primary">Shop Now</a>
+        <a href="#categories" class="btn-secondary">Explore Sets</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section products" id="products">
+    <div class="section-header">
+      <span class="section-badge">Featured Collection</span>
+      <h2 class="section-title">Bestselling Sets</h2>
+      <p class="section-subtitle">Hand-picked favorites loved by builders around the world</p>
+    </div>
+
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <article class="product-card animate-on-scroll">
+        <div class="product-image">
+          <span class="product-badge">Bestseller</span>
+          <span class="product-emoji">🚀</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Star Wars</span>
+          <h3 class="product-name">Millennium Falcon™</h3>
+          <div class="product-details">
+            <span class="product-pieces">7,541 pieces</span>
+            <span class="product-age">16+</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$849.99</span>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="product-card animate-on-scroll">
+        <div class="product-image">
+          <span class="product-badge new">New</span>
+          <span class="product-emoji">🏎️</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Technic</span>
+          <h3 class="product-name">Bugatti Chiron</h3>
+          <div class="product-details">
+            <span class="product-pieces">3,599 pieces</span>
+            <span class="product-age">16+</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$349.99</span>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="product-card animate-on-scroll">
+        <div class="product-image">
+          <span class="product-badge sale">-15%</span>
+          <span class="product-emoji">🏰</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Harry Potter</span>
+          <h3 class="product-name">Hogwarts Castle™</h3>
+          <div class="product-details">
+            <span class="product-pieces">6,020 pieces</span>
+            <span class="product-age">16+</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$469.99 <span class="original">$549.99</span></span>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="product-card animate-on-scroll">
+        <div class="product-image">
+          <span class="product-badge new">New</span>
+          <span class="product-emoji">💐</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Creator</span>
+          <h3 class="product-name">Flower Bouquet</h3>
+          <div class="product-details">
+            <span class="product-pieces">756 pieces</span>
+            <span class="product-age">18+</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$59.99</span>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="product-card animate-on-scroll">
+        <div class="product-image">
+          <span class="product-emoji">🛸</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">City</span>
+          <h3 class="product-name">Space Exploration</h3>
+          <div class="product-details">
+            <span class="product-pieces">1,422 pieces</span>
+            <span class="product-age">8+</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$129.99</span>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="product-card animate-on-scroll">
+        <div class="product-image">
+          <span class="product-emoji">🏛️</span>
+        </div>
+        <div class="product-info">
+          <span class="product-category">Architecture</span>
+          <h3 class="product-name">The White House</h3>
+          <div class="product-details">
+            <span class="product-pieces">1,483 pieces</span>
+            <span class="product-age">18+</span>
+          </div>
+          <div class="product-footer">
+            <span class="product-price">$99.99</span>
+            <button class="add-to-cart">🛒 Add to Cart</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="section categories" id="categories">
+    <div class="section-header">
+      <span class="section-badge">Browse by Theme</span>
+      <h2 class="section-title">Explore Categories</h2>
+      <p class="section-subtitle">Find the perfect set from our extensive collection</p>
+    </div>
+
+    <div class="categories-grid">
+      <div class="category-card animate-on-scroll">
+        <span class="category-icon">⚔️</span>
+        <h3 class="category-name">Star Wars™</h3>
+        <span class="category-count">42 Sets</span>
+      </div>
+
+      <div class="category-card animate-on-scroll">
+        <span class="category-icon">⚙️</span>
+        <h3 class="category-name">Technic</h3>
+        <span class="category-count">38 Sets</span>
+      </div>
+
+      <div class="category-card animate-on-scroll">
+        <span class="category-icon">🧙</span>
+        <h3 class="category-name">Harry Potter™</h3>
+        <span class="category-count">29 Sets</span>
+      </div>
+
+      <div class="category-card animate-on-scroll">
+        <span class="category-icon">🏙️</span>
+        <h3 class="category-name">City</h3>
+        <span class="category-count">56 Sets</span>
+      </div>
+
+      <div class="category-card animate-on-scroll">
+        <span class="category-icon">🎨</span>
+        <h3 class="category-name">Creator Expert</h3>
+        <span class="category-count">24 Sets</span>
+      </div>
+
+      <div class="category-card animate-on-scroll">
+        <span class="category-icon">🏛️</span>
+        <h3 class="category-name">Architecture</h3>
+        <span class="category-count">18 Sets</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section features" id="features">
+    <div class="section-header">
+      <span class="section-badge">Why Choose Us</span>
+      <h2 class="section-title">The BrickWorld Promise</h2>
+      <p class="section-subtitle">Premium service for premium builders</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card animate-on-scroll">
+        <span class="feature-icon">🚚</span>
+        <h3 class="feature-title">Free Shipping</h3>
+        <p class="feature-text">Free worldwide shipping on orders over $75</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll">
+        <span class="feature-icon">✨</span>
+        <h3 class="feature-title">Authentic LEGO®</h3>
+        <p class="feature-text">100% genuine LEGO products guaranteed</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll">
+        <span class="feature-icon">🔄</span>
+        <h3 class="feature-title">Easy Returns</h3>
+        <p class="feature-text">30-day hassle-free return policy</p>
+      </div>
+
+      <div class="feature-card animate-on-scroll">
+        <span class="feature-icon">🎁</span>
+        <h3 class="feature-title">Gift Wrapping</h3>
+        <p class="feature-text">Complimentary gift wrapping available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section" id="cta">
+    <div class="cta-content">
+      <h2 class="cta-title">Join the Builder's Club</h2>
+      <p class="cta-text">
+        Get exclusive access to limited edition sets, early releases,
+        and member-only discounts. Start building your legacy today!
+      </p>
+      <a href="#" class="btn-primary">Join Now – It's Free!</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-brick"></div>
+          BrickWorld
+        </a>
+        <p>Building dreams, one brick at a time since 2024.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Shop</h4>
+        <ul class="footer-links">
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Bestsellers</a></li>
+          <li><a href="#">Sale</a></li>
+          <li><a href="#">Gift Cards</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Support</h4>
+        <ul class="footer-links">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-title">Connect</h4>
+        <div class="social-links">
+          <a href="#" class="social-link">📘</a>
+          <a href="#" class="social-link">📸</a>
+          <a href="#" class="social-link">🐦</a>
+          <a href="#" class="social-link">📺</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2024 BrickWorld. All rights reserved. LEGO® is a trademark of the LEGO Group.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
